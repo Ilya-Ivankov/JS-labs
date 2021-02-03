@@ -1,0 +1,30 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №9</title>
+    <script type="text/javascript">
+function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+  for (i=50;i<=290;i+=30){
+        ctx.beginPath(); 
+		ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+		ctx.arc(500, 500, i, 0, 2*Math.PI,false);
+		ctx.stroke(); // отрисовка
+        ctx.fill(); // заливка   
+		ctx.closePath(); 
+		}
+   }
+   else{}
+	}
+    </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+ 
+  <body onload="draw();">
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+  </body>
+</html>

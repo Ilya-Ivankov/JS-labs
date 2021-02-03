@@ -1,0 +1,29 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body>
+<form>
+В каких единицах измерения измеряется работа? <br>
+<select>
+  <option id="a1" value="Моль">Моль</option>
+  <option id="a2" value="Джоуль">Джоуль</option>
+</select>
+<input type="button" onClick ="fff()" value="Проверить">
+</form>
+
+<script language="javascript">
+var a = document.getElementById("a1");
+var b = document.getElementById("a2");
+function fff(){
+if (b.selected){
+alert("Правильно!");
+}
+else{
+alert("Попробуй ещё раз!");}}
+</script>
+</body>
+</html>

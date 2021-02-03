@@ -1,0 +1,27 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.2</title>
+<style>
+   </style>
+</head>
+<body>
+<form action="mailto:address@domen.domen" id="f1" method="post" onsubmit="confirmOrder()">
+<input type="text" value="" />
+<input id="f2" type="reset" value="Очистить" /> 
+</form>
+
+
+<script language="javascript">
+var b=document.getElementById("f2");
+document.getElementById("f1").onreset=function()
+ {
+   alert ('Вы уверены, что хотите очистить форму?') ;  
+   b.value="ГОТОВО!";
+ };
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+while(a){
+massiv[c]=parseFloat(prompt("Введите элемент массива:"));
+massiv.sort(function( a, b ) {return a - b});
+c++;
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+if(massiv.length==0){
+alert("Чётных элементов элементов в массиве нет");}
+else {
+alert("Сортировка массива по возрастанию: ["+massiv+"];");
+
+}
+</script>
+</body>
+</html>

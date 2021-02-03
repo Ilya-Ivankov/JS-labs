@@ -1,0 +1,27 @@
+<! doctype html>
+<html lang="ru">
+<head>
+<title>Практическая работа №5</title>
+</head>
+<body>
+<script type="text/javascript">
+        let matrix = [
+		[11, 17, 85, 34, 34],
+        [19, 73, 61, 3, 5],
+        [77, 34, 0, -3, -2],
+        [19, -19, 39, 28, 99],
+        [89, 67, 67, 0, -8]
+		];
+
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                let element = matrix[i][j];
+                if (element >= -5 && element <= 7) {
+                    document.write("matrix[" + i + "][" + j + "] = " + element + "<br>");
+                }
+            }
+        }
+
+</script>
+</body>
+</html>

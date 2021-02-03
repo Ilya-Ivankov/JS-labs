@@ -1,0 +1,32 @@
+<! doctype html>
+<html lang="ru">
+<head>
+<title>Практическая работа №7</title>
+</head>
+<body>
+
+<font align="center"><h3>ВВВ Компания Спасибо за заказ! Пожалуйста введите номер телефона:</h3></font>
+<form align="center">
+<input id="a1">-<input id="b1">-<input id="c1">
+<button type="submit" onclick="checkInput()">Отправить</button>
+</form >
+<script type="text/javascript">
+var a=/^[495]|[632]{3}$/;
+var b=/^[\d]{3}$/;
+var c=/^[\d]{4}$/;
+function checkInput(){
+var a1=document.getElementById("a1");
+var b1=document.getElementById("b1");
+var c1=document.getElementById("c1");
+if (a1.value.search(a)==-1)
+alert("Данный первого поля введены не корректно");
+else if (b1.value.search(b)==-1)
+alert("Данный второго поля введены не корректно");
+else if (c1.value.search(c)==-1)
+alert("Данный третьего поля введены не корректно");
+else {
+alert("Спасибо за покупку!")}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<! doctype html>
+<html lang="ru">
+<head>
+<title>Практическая работа №6</title>
+</head>
+<body>
+<script type="text/javascript">
+        function TuristFirm(humans, days, rate) {
+            this.humanCount = humans;
+            this.daysNumber = days;
+            this.coutryRate = rate;
+
+            this.cost = function () {
+                return humans * days * rate;
+            }
+        }
+
+        var t = new TuristFirm(10, 10, 100);
+
+        for (let i in t) {
+            document.write(i + ": " + t[i] + "<br>");
+        }
+
+        document.write("<br>");
+
+        document.write("Cost: " + t.cost() + "<br>");
+</script>
+</body>
+</html>

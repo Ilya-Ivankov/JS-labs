@@ -1,0 +1,29 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+var d=0;
+var max=1;
+
+while(a){
+massiv[c]=prompt("Введите элемент массива:");
+if(d==0 && massiv[c]<0){
+d=-1
+max=massiv[c];}
+if (massiv[c]>max && massiv[c]<0){
+max=massiv[c];}
+c++
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+if(max==-1)
+alert("Максимальных отрицательных элементов в массиве нет");
+else
+alert("Максимальный отрицательный элемент в массиве:"+max);
+    </script>
+</body>
+</html>

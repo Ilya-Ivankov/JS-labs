@@ -1,0 +1,31 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+var F=[];
+var j=0;
+while(a){
+massiv[c]=prompt("Введите элемент массива:");
+if(massiv[c]=="г" || massiv[c]==0 || massiv[c]=="Г" || massiv[c]==NaN){
+break;
+}
+else if (j>500){
+break;
+}
+else {F.push(massiv[c]);}
+j+=parseFloat(massiv[c]);
+c++;
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+if(F.length==0){
+alert("Элементов в массиве нет");}
+else {
+alert("Элементы массива: "+F.join(", "));}
+</script>
+</body>
+</html>

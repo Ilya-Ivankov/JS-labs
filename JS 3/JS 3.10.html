@@ -1,0 +1,24 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №3</title>
+</head>
+<body>
+ <script>
+    var a = prompt("Введите число:");
+        var b = 0;
+        var c;
+        do {
+            b++;
+            var c = prompt("Попробуйте угадать число:");
+            if (c < a) {
+                alert("Мало");
+            } else if (c > a) {
+                alert("Много");
+            } else {
+                alert("Правильно! Количество попыток:" + c);
+            }
+        } while (c !== a);
+	    </script>
+</body>
+</html>

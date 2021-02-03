@@ -1,0 +1,23 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.2</title>
+</head>
+<body>
+<img id="smileImg"  onclick="sayHello()" name="img" src='https://img2.pngindir.com/20180718/ft/kisspng-smiley-emoticon-computer-icons-clip-art-disapointed-5b4f1bb9460fb5.399911381531911097287.jpg' height="200px" white="200px"/>
+<script type="text/javascript">
+function sayHello() { 
+	var userName=prompt("Как вас зовут?");
+	var a=document.getElementById("smileImg");
+	if(userName){
+		alert("Привет "+userName);
+		a.src="https://img2.freepng.ru/20180413/tae/kisspng-emoticon-smiley-emoji-pakistan-smile-5ad09ec157c953.5063209615236215693596.jpg";
+	}
+}
+
+
+
+</script>
+
+</body>
+</html>

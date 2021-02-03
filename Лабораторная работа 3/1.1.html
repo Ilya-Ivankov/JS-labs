@@ -1,0 +1,29 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+var d=0;
+var min=0;
+
+while(a){
+massiv[c]=prompt("Введите элемент массива:");
+if(d==0 && massiv[c]>0){
+d=-1
+min=massiv[c];}
+if (massiv[c]<min && massiv[c]>0){
+min=massiv[c];}
+c++
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+if(min==-1)
+alert("Минимальных положительных элементов в массиве нет");
+else
+alert("Минимальный положительный элемент в массиве:"+min);
+    </script>
+</body>
+</html>

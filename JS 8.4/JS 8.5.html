@@ -1,0 +1,35 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body>
+
+
+<form name="f1">
+<select name="s1">
+ <option value="Ростов Дон" id="one">Ростов-Дон</option>
+ <option value="Владимир">Владимир</option>
+ <option value="Москва">Москва</option>
+</select>
+<input type="button" onClick="myFunc()">
+</form>
+
+
+<script language="javascript">
+
+
+function myFunc(){
+var jne = document.getElementById("one");
+jne.text = "Ростов-на-Дону";
+jne.value = "Ростов-на-Дону";
+}
+
+
+
+</script>
+</body>
+</html>
+

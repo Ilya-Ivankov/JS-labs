@@ -1,0 +1,32 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+var F=[];
+while(a){
+massiv[c]=parseFloat(prompt("Введите элемент массива(от 1 до 99):"));
+F.push(massiv[c]);
+c++;
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+
+for (i=0;i<F.length;i++){
+if(F[i]%2==0 || F[i]<0 || F[i]>99){
+F.splice(i,1);
+i--;
+}}
+
+if(massiv.length==0){
+alert("Ваших элементов элементов в массиве нет");}
+
+
+else {
+alert("Ваши элементы массива: "+F.join(", "));}
+</script>
+</body>
+</html>

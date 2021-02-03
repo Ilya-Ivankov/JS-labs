@@ -1,0 +1,50 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №2</title>
+  </head>
+   <body>
+<script>
+try{
+var a=prompt("Введите данные:");
+
+
+if (isNaN(Number(a))){
+if (a.length > 5) {
+throw new Error("Вы ввели текст, который длиннее пяти символов.");}}
+
+
+else if (parseInt(a)<100){
+throw new Error("Вы ввели числовое значение, которое короче трёх символов.");}
+
+
+else if (parseFloat(a).length==6){
+ throw new Error("Вы ввели вещественное число длинной 6 символов.");}
+
+
+else if (a==false){
+throw new Error("Ладно, до скорого!");}
+
+
+else {
+if (a.length==0){
+throw new Error("Вы не ввели символы.");}}}
+
+
+
+
+catch (qwerty) {
+alert(qwerty);
+}
+
+
+finally{
+var y = confirm("Запустить заново?");
+if (y == true){
+location.reload();}
+}
+
+
+</script>
+</body>
+</html>

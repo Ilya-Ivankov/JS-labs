@@ -1,0 +1,40 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №3</title>
+  </head>
+   <body>
+    <script>
+var a=confirm("Будем вводить значения в массив?");
+var massiv=[];
+var c=0;
+var z=0;
+var F=[];
+var Q=[];
+while(a){
+massiv[c]=parseFloat(prompt("Введите элемент массива:"));
+F.push(massiv[c]);
+Q[z]=getRandomInRange();
+z++;
+c++;
+a=confirm("Вы хотите ввести ещё один элемент массива?");}
+
+
+if(massiv.length==0){
+alert("Ваших элементов элементов в массиве нет");}
+
+
+else {
+alert("Ваши элементы массива: ["+F.join(" ,")+"];"+"\n"+"Рандомные элементы массива: ["+Q+"].");}
+
+
+function getRandomInRange() {
+var min=-99;
+var max=99;
+  return Math.floor(Math.random() * (max - min + massiv[c])) + min;
+}
+
+
+</script>
+</body>
+</html>

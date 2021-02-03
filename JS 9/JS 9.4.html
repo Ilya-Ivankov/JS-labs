@@ -1,0 +1,35 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №9</title>
+    <script type="text/javascript">
+	
+function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+	  let a=["rgb(32, 178, 170)","rgb(139, 0, 0)","rgb(0, 0, 0)","rgb(0, 255, 0)","rgb(32, 178, 170)","rgb(128, 128, 0)","rgb(128, 0, 128)","rgb(255, 69, 0)","rgb(255, 0, 255)"];
+	  var b=0;
+  for (i=50;i<=290;i+=30){
+        ctx.beginPath(); 
+		ctx.fillStyle = a[b];
+		ctx.arc(50+i*1.5, 20+i*1.2, i/5, 0,2* Math.PI,false);
+		ctx.stroke(); // отрисовка
+        ctx.fill(); // заливка   
+		ctx.closePath(); 
+		b++
+		}
+   }
+   else{}
+	}
+	
+    </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+ 
+  <body onload="draw();">
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+  </body>
+</html>

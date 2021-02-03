@@ -1,0 +1,32 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body onload="check()">
+<form name="f1">
+Какой заряд у электрона?<br>
+<input type="radio"   id="ch1" name="r1">Положительный(+)<br>
+<input type="radio"   id="ch2" name="r1">Отрицательный(-)<br>
+<input type="button" onClick ="fanc()" value="Проверить">
+</form>
+
+<script language="javascript">
+var a=document.getElementById("ch1");
+var b=document.getElementById("ch2");
+function fanc(){
+	if (b.checked==true){
+	alert("Правильно!")
+	}
+	else {
+	alert("Неправильо!")}
+}
+function check(){
+	 document.f1.ch1.checked=true;
+}
+
+</script>
+</body>
+</html>

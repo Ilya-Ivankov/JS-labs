@@ -1,0 +1,40 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body>
+
+
+<form id="form">
+Набор канцелярских товаров:
+<select onChange="ABC()" multiple>
+	<option>Карандаши
+	<option>Авторучки
+	<option>Линейки
+	<option>Тетради
+	<option>Стерки
+	<option>Кнопки
+</select>
+Выбраны позиции:
+<input name="s1" size="7" maxlength="7">
+</form>
+
+<script language="javascript">
+var form = document.getElementById("form");
+function ABC(){
+form.elements[1].value='';
+for(i=0;i<6;i++){
+if(form.elements[0].options[i].selected==true){
+form.elements[1].value = form.elements[1].value+i;
+}
+}
+}
+
+
+</script>
+</body>
+</html>
+

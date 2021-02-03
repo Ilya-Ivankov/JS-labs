@@ -1,0 +1,30 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body>
+<form>
+Оценка:<br>
+<input id="txt1" type="text" value="" ><br><br>
+<select onchange="fff()">
+  <option value="Отлично">Отлично</option>
+  <option value="Хорошо">Хорошо</option>
+  <option value="Удовлетворительно">Удовлетворительно</option>
+  <option value="Неудовлетворительно">Неудовлетворительно</option>
+</select>
+</form>
+
+<script language="javascript">
+var a = document.getElementsByTagName("option");
+var b = document.getElementById("txt1");
+function fff(){
+for(i=0;i<a.length;i++){
+if (a[i].selected){
+b.value=a[i].value;
+}}}
+</script>
+</body>
+</html>

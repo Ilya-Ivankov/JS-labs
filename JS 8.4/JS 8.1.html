@@ -1,0 +1,35 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.4</title>
+<style>
+   </style>
+</head>
+<body>
+
+<form name="f1">
+Сколько будет 12-3?<br>
+<input type="checkbox"  name="ch1" id="ch1">9<br>
+<input type="checkbox"  name="ch2" id="ch2">7<br>
+<input type="checkbox"  name="ch3" id="ch3">3^2<br>
+<input id="b1" type="button" onclick="ABC()" value="Проверка">
+<input id="f2" type="reset" value="Очистить" /> 
+</form>
+<script language="javascript">
+var a=document.getElementById("ch1");
+var b=document.getElementById("ch2");
+var c=document.getElementById("ch3");
+function ABC(){
+if (a.checked==true && c.checked==true){
+alert("Молодец, это правильный ответ!");}
+else{
+alert("Попробуй ещё раз!");
+}
+}
+document.getElementById("f1").onreset=function()
+ {
+   alert ('Вы уверены, что хотите очистить форму?') ;  
+ };
+</script>
+</body>
+</html>

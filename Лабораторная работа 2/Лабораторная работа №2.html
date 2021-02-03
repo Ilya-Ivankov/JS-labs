@@ -1,0 +1,33 @@
+<! doctype html>
+<html>
+<head>
+<title>Лабораторная работа №2</title>
+  </head>
+   <body>
+<script>
+var a=confirm("Запукаем программу?");
+while (a==true) {
+var b=prompt("Введите число:");
+if (isNaN(b)==true){
+alert("Введите число!(не буквы)");
+}
+else if(b.length==0){
+alert("Вы ничего не ввели!");
+}
+else{
+alert("Ваше число: "+b);
+break;
+}
+}
+while (a==false){
+alert('Ладно, до скорого!');
+break;
+}
+
+
+
+
+
+</script>
+</body>
+</html>

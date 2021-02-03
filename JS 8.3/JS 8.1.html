@@ -1,0 +1,27 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8.2</title>
+<style>
+   </style>
+</head>
+<body>
+<form action="/" method="get" name="my">
+Сколько бит в 1 байте?
+<input type="text" id="answer" size="3"><br>
+<input name="b1" type="button" onClick="check()" value="Проверить">
+</form>
+
+<script language="javascript">
+function check(){
+var a=document.getElementById("answer");
+ if(a.value==8) {
+ alert("GOOD JOB!");
+ }
+ else {
+ alert ("It is false");
+ }
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<! doctype html>
+<html lang="ru">
+<head>
+<title>Практическая работа №6</title>
+</head>
+<body>
+<script type="text/javascript">
+        function MenuItem(title, url) {
+            this.title = title;
+            this.url = url;
+            this.show = function () {
+
+                for (let i = 0; i < liCount; i++) {
+                    document.write("<li>" + title + "</li>");
+                }
+            }
+        }
+
+        let title = prompt("Введите title");
+        let liCount = parseInt(prompt("Введите количество "));
+
+        let mi = new MenuItem("F", "E");
+        mi.show();
+</script>
+</body>
+</html>

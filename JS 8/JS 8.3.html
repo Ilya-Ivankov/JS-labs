@@ -1,0 +1,38 @@
+<! doctype html>
+<html>
+<head>
+<title>Практическая работа №8</title>
+</head>
+<body>
+<form>
+Имя: <input type="text" id="name"><br>
+Кол-во пончиков: <input type="text" id="donuts"><br>
+Минут: <input type="text" id="minutes"><br>
+Подитог: <input type="text" id="poditog"><br>
+Налог: <input type="text" id="tax"><br>
+Итог:<input type="text" id="itog"><br>
+<input type="submit" value="заказать" onclick="placeOrder();">
+</form>
+<script type="text/javascript">
+var a=document.getElementById("name");
+var b=document.getElementById("donuts");
+var c=document.getElementById("minutes");
+var d=document.getElementById("poditog");
+var e=document.getElementById("tax");
+var f=document.getElementById("itog");
+var form = document.getElementsByTagName("form")[0];
+
+function placeOrder(){
+if(a.value == ""){
+alert("Введите имя (обязательно)");}
+else if (c.value == "" || isNaN(c.value)){
+alert("Введите кол-во минут для приготовления ");}
+else {
+form.submit();
+}
+}
+
+</script>
+
+</body>
+</html>

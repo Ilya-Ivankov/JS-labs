@@ -1,0 +1,20 @@
+<! doctype html>
+<html lang="ru">
+<head>
+<title>Практическая работа №6</title>
+</head>
+<body>
+<script type="text/javascript">
+String.prototype.uroven="1";
+String.prototype.PrintMe=printZagolovok;
+function printZagolovok (){
+	document.write('<h1>');
+	document.write(this.toString());
+	document.write('</h1>');
+}
+var s=new String("УРА!");;
+s.uroven=("aa");
+s.PrintMe();
+</script>
+</body>
+</html>
